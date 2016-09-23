@@ -7,7 +7,7 @@ header("Content-Type: application/json; charset=UTF-8");
 if(isset($_GET["n"]) && isset($_GET["un"])&& isset($_GET["ps"])&& isset($_GET["ph"])&& isset($_GET["add"])&& isset($_GET["pin"]) ){
 	if( !empty($_GET["n"])  && !empty($_GET["un"])&& !empty($_GET["ps"])&& !empty($_GET["ph"])&& !empty($_GET["add"])&& !empty($_GET["pin"])  ){
 	
-		$conn = new mysqli("localhost", "username", "password", "database");
+		$conn = new mysqli("localhost", "root", "both", "test");
 		
 		$name=$_GET["n"];
 		$username=$_GET["un"];
