@@ -3,7 +3,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-$conn = new mysqli("localhost", "username", "password", "database");
+$conn = new mysqli("localhost", "root", "both", "test");
 
 
 $query="SELECT p_id,p_name,p_description,p_image_id,p_price FROM products where p_available=1 ";
