@@ -26,8 +26,6 @@
 		$password=$request->ps; 
 		$password=md5($password);
 		$phone=$request->ph; 
-		$address=$request->add; 
-		$pincode=$request->pin; 
 		
 		$conn = new mysqli("localhost", "u142430760_both", "both4312", "users"); // ใส่ server new database
 		
