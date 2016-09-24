@@ -27,7 +27,7 @@
 		$password=md5($password);
 		$phone=$request->ph; 
 		
-		$conn = new mysqli("localhost", "u142430760_both", "both4312", "users"); // ใส่ server new database
+		$conn = new mysqli("localhost", "root", "both", "users"); // ใส่ server new database
 		
 		// To protect MySQL injection for Security purpose
 		$name = stripslashes($name);
